@@ -5,11 +5,65 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Chauchera · Tu plata en orden. Tus facturas, solas.</title>
+<title>Chauchera · Finanzas personales y gastos personales del SRI en tu Mac</title>
+<link rel="canonical" href="https://chauchera.alvarovm.uk/">
 <meta name="description" content="Finanzas personales hechas para Ecuador, en tu Mac: tus facturas llegan solas desde tu correo, gastos personales del SRI, Formulario SRI-GP, impuesto a la renta, décimos, diferidos y presupuesto. Tus datos se quedan en tu computadora.">
 <meta property="og:title" content="Chauchera · Tu plata en orden. Tus facturas, solas.">
 <meta property="og:description" content="Cuentas, presupuesto y todo lo del SRI, en tu Mac. Sin la clave de tu banco.">
-<meta property="og:image" content="./img/app/inicio-1200.jpg">
+<meta property="og:image" content="https://chauchera.alvarovm.uk/img/app/inicio-1200.jpg">
+<meta property="og:url" content="https://chauchera.alvarovm.uk/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Chauchera">
+<meta property="og:locale" content="es_EC">
+<meta name="twitter:card" content="summary_large_image">
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@type": "SoftwareApplication",
+ "name": "Chauchera",
+ "url": "https://chauchera.alvarovm.uk/",
+ "description": "App de finanzas personales para Mac hecha para Ecuador: facturas electrónicas desde tu correo, gastos personales del SRI, Formulario SRI-GP, impuesto a la renta, décimos, presupuesto y diferidos. Tus datos se quedan en tu computadora.",
+ "applicationCategory": "FinanceApplication",
+ "operatingSystem": "macOS 13 o posterior (Apple Silicon e Intel)",
+ "inLanguage": "es-EC",
+ "countriesSupported": "EC",
+ "image": "https://chauchera.alvarovm.uk/img/icon-192.png",
+ "screenshot": "https://chauchera.alvarovm.uk/img/app/inicio-1200.jpg",
+ "downloadUrl": "https://github.com/alvarovegamalo/chauchera-releases/releases/latest/download/Chauchera-para-Mac.dmg",
+ "featureList": [
+  "Facturas electrónicas del SRI desde tu correo",
+  "Gastos personales y Formulario SRI-GP",
+  "Proyección del impuesto a la renta",
+  "Sueldo, décimos y fondos de reserva",
+  "Presupuesto, cuentas y tarjetas con diferidos",
+  "Prueba gratis de 30 días"
+ ],
+ "offers": {
+  "@type": "Offer",
+  "price": "40",
+  "priceCurrency": "USD",
+  "availability": "https://schema.org/InStock",
+  "url": "https://chauchera.alvarovm.uk/#precio",
+  "description": "Pago único, precio de lanzamiento"
+ },
+ "publisher": {
+  "@type": "Organization",
+  "name": "AVM Labs",
+  "url": "https://avmlabs.alvarovm.uk/",
+  "address": {
+   "@type": "PostalAddress",
+   "addressLocality": "Cuenca",
+   "addressRegion": "Azuay",
+   "addressCountry": "EC"
+  }
+ },
+ "author": {
+  "@type": "Person",
+  "name": "Alvaro Vega Malo",
+  "url": "https://avmlabs.alvarovm.uk/"
+ }
+}
+</script>
 <meta name="theme-color" content="#000000">
 <link rel="icon" href="./img/icon-192.png">
 <link rel="preload" href="./fonts/InterTight.woff2" as="font" type="font/woff2" crossorigin>
@@ -306,7 +360,7 @@
   // ── Fill these in before publishing (scripts/check_store.sh checks) ───────────────────────────────
   const CONFIG = {
     mode: "sale",                        // "lista" until launch (the waiting list), then "sale" (Download and Buy)
-    price: "",                           // e.g. "29,99": shown as "$29,99 al año"; empty: buttons just say "Comprar"
+    price: "40",                         // one-time, launch price (then 50): shown as "$40"; empty: buttons just say "Comprar"
     buyUrl: "https://wa.me/593999962080?text=Hola%2C%20quiero%20comprar%20Chauchera",   // WhatsApp (personal number for now): only on the page, never in the app
     download: "https://github.com/alvarovegamalo/chauchera-releases/releases/latest/download/Chauchera-para-Mac.dmg",   // RELEASES = https://github.com/alvarovegamalo/chauchera-releases
     email: "avmlabs.dev.ec@gmail.com",                 // where people write to you
@@ -341,7 +395,7 @@
     <p class="small" style="margin:2px 0 0">Muy pronto para Mac. Después, Windows. 30 días gratis. <a href="./privacidad.html">Privacidad</a></p>
   </div>
   <div class="rise" style="--d:3" data-sale>
-    <div class="ctas"><a class="btn" data-href="download">Descargar gratis para Mac</a><a class="btn ghost" data-href="buy">Comprar<span data-optional="price"> · $<span data-text="price"></span> al año</span></a></div>
+    <div class="ctas"><a class="btn" data-href="download">Descargar gratis para Mac</a><a class="btn ghost" data-href="buy">Comprar<span data-optional="price"> · $<span data-text="price"></span></span></a></div>
     <p class="small" style="margin:16px 0 0">30 días de prueba sin tarjeta · macOS 13 o posterior, Apple Silicon e Intel · Windows: muy pronto</p>
   </div>
 
@@ -574,9 +628,9 @@
       <p>Al abrirla, puedes <b>probar con datos de ejemplo</b>: los últimos cuatro meses de un hogar de Quito, con sus facturas, su sueldo y sus diferidos. Cuando quieras, <b>Empezar con mis datos</b> los borra y empiezas de cero.</p>
       <ul class="ticks"><li>30 días gratis, con todo incluido</li><li>Sin tarjeta para probar</li><li>Tus datos se quedan si después compras</li></ul></div>
     <div class="tile copper reveal" style="--d:1"><span class="m">Precio</span>
-      <h3 data-lista>Un pago al año.</h3>
+      <h3 data-lista>Un solo pago.</h3>
       <p data-lista>Con todas las actualizaciones del SRI de cada año. Quienes estén en la lista reciben el precio de lanzamiento primero.</p>
-      <span data-optional="price"><span class="price" data-sale>$<span data-text="price"></span></span><p data-sale>al año, con todas las actualizaciones del SRI.</p></span><p data-sale data-noprice>Precio de lanzamiento: escríbenos por WhatsApp y te lo contamos. Una licencia vale por un año, con todas las actualizaciones del SRI.</p>
+      <span data-optional="price"><span class="price" data-sale>$<span data-text="price"></span></span><p data-sale>pago único · precio de lanzamiento (luego $50). Es tuya para siempre, con las actualizaciones del SRI incluidas.</p></span><p data-sale data-noprice>Precio de lanzamiento: escríbenos por WhatsApp y te lo contamos. Pago único: es tuya para siempre, con las actualizaciones del SRI incluidas.</p>
       <div style="margin-top:auto;padding-top:28px"><a class="btn" href="#lista" data-lista>Avísame cuando esté lista</a><a class="btn" data-href="buy" data-sale>Comprar</a></div></div>
   </div>
 </div></section>
@@ -591,7 +645,7 @@
     <details><summary>¿Las cifras del SRI son oficiales?</summary><p>Chauchera usa las tablas y valores publicados (tabla de renta 2026, canasta básica de $821,80, salario básico de $482) para que planifiques y revises. Las reglas del SRI, el IESS y el Código del Trabajo deciden, y el formulario oficial se presenta en el SRI.</p></details>
     <details><summary>Uso Quicken. ¿Puedo pasarme?</summary><p>Sí: Chauchera importa lo que exportas de Quicken o Banktivity (QIF), con tus cuentas, categorías y transacciones.</p></details>
     <details data-sale><summary>¿Cómo lo instalo?</summary><p>Abre el archivo descargado y arrastra Chauchera a la carpeta Aplicaciones. Ábrelo desde ahí: tienes 30 días gratis, sin tarjeta.</p></details>
-    <details data-sale><summary>¿Cómo pago?</summary><p>Por transferencia bancaria o Deuna. Toca <i>Comprar</i> y escríbenos: te enviamos los datos de pago y, apenas llegue, tu clave. En Chauchera: <i>Tengo una clave</i>, pegas la clave y listo. Vale por un año; antes de que venza, Chauchera te avisa para renovarla.</p></details>
+    <details data-sale><summary>¿Cómo pago?</summary><p>Por transferencia bancaria o Deuna. Toca <i>Comprar</i> y escríbenos: te enviamos los datos de pago y, apenas llegue, tu clave. En Chauchera: <i>Tengo una clave</i>, pegas la clave y listo. Es un pago único: Chauchera es tuya para siempre, con las actualizaciones incluidas.</p></details>
     <details><summary>¿Y si uso Windows?</summary><p>Chauchera llega primero a Mac y después a Windows. Apúntate a la lista y te avisamos cuando esté lista para tu computadora.</p></details>
     <details data-optional="email"><summary>¿Tengo dudas o un problema?</summary><p>Escríbenos a <a data-href="mail"><span data-text="email"></span></a>. Te responde quien hace Chauchera.</p></details>
   </div>
@@ -605,7 +659,7 @@
 </main>
 
 <footer><div class="wrap">
-  <span>© 2026 <span data-optional="name"><span data-text="name"></span> · </span>Chauchera, hecha en Ecuador</span>
+  <span>© 2026 <span data-optional="name"><span data-text="name"></span> · </span>Chauchera, hecha en Cuenca, Ecuador, por <a href="https://avmlabs.alvarovm.uk/">AVM Labs</a></span>
   <span><a href="./guias/">Guías</a> · <a href="./privacidad.html">Privacidad</a><span data-optional="email"> · <a data-href="mail">Contacto</a></span></span>
 </div></footer>
 
