@@ -576,7 +576,7 @@
     <div class="tile copper reveal" style="--d:1"><span class="m">Precio</span>
       <h3 data-lista>Un pago al año.</h3>
       <p data-lista>Con todas las actualizaciones del SRI de cada año. Quienes estén en la lista reciben el precio de lanzamiento primero.</p>
-      <span data-optional="price"><span class="price" data-sale>$<span data-text="price"></span></span><p data-sale>al año, con todas las actualizaciones del SRI.</p></span>
+      <span data-optional="price"><span class="price" data-sale>$<span data-text="price"></span></span><p data-sale>al año, con todas las actualizaciones del SRI.</p></span><p data-sale data-noprice>Precio de lanzamiento: escríbenos por WhatsApp y te lo contamos. Una licencia vale por un año, con todas las actualizaciones del SRI.</p>
       <div style="margin-top:auto;padding-top:28px"><a class="btn" href="#lista" data-lista>Avísame cuando esté lista</a><a class="btn" data-href="buy" data-sale>Comprar</a></div></div>
   </div>
 </div></section>
@@ -612,6 +612,7 @@
 <script>
   // CONFIG into the page: a field not filled in yet hides what shows it
   for (const el of document.querySelectorAll("[data-optional]")) if (!CONFIG[el.dataset.optional] || CONFIG[el.dataset.optional].includes("{{")) el.remove();
+  if (CONFIG.price) for (const el of document.querySelectorAll("[data-noprice]")) el.remove();
   for (const el of document.querySelectorAll("[data-text]")) el.textContent = CONFIG[el.dataset.text];
   const LINKS = { download: CONFIG.download, buy: CONFIG.buyUrl, mail: "mailto:" + CONFIG.email };
   for (const el of document.querySelectorAll("[data-href]")) el.href = LINKS[el.dataset.href];
