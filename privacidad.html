@@ -1,0 +1,125 @@
+<!-- Chauchera's privacy policy, for the Microsoft Store listing ("Privacy policy URL") and Google's.
+     Before publishing: replace Alvaro Vega Malo and avmlabs.dev.ec@gmail.com (scripts/check_store.sh refuses while they remain).
+     It describes Chauchera for Windows and Chauchera for Mac; keep it true when the app changes what it sends over the internet. -->
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Chauchera · Política de privacidad</title>
+<style>
+  :root { color-scheme: light dark; --ink: #1d2327; --muted: #5b6770; --bg: #fff; --line: #e3e7ea; }
+  @media (prefers-color-scheme: dark) { :root { --ink: #e8ecef; --muted: #a3afb8; --bg: #15191c; --line: #2a3136; } }
+  body { margin: 0; background: var(--bg); color: var(--ink); font: 16px/1.6 system-ui, -apple-system, "Segoe UI", sans-serif; }
+  main { max-width: 720px; margin: 0 auto; padding: 32px 20px 64px; }
+  h1 { font-size: 1.7rem; margin: 0 0 4px; } h2 { font-size: 1.15rem; margin: 28px 0 6px; }
+  .sub { color: var(--muted); margin: 0 0 24px; } hr { border: 0; border-top: 1px solid var(--line); margin: 48px 0; }
+  li { margin: 4px 0; } a { color: inherit; }
+</style>
+</head>
+<body>
+<main>
+<h1>Política de privacidad de Chauchera</h1>
+<p class="sub">Chauchera para Windows y para Mac · Vigente desde el 14 de noviembre de 2026 · <a href="#english">English below</a></p>
+
+<h2>En pocas palabras</h2>
+<p>Tus datos financieros se guardan en tu computadora, no en nuestros servidores. Nosotros no los vemos, no los recibimos y no los vendemos. La única excepción la eliges tú: si activas anotar tus gastos por WhatsApp, esos mensajes cortos pasan por nuestro servidor, cifrados para tu computadora, hasta que ella los recibe (ver abajo).</p>
+
+<h2>Quién es responsable</h2>
+<p>Alvaro Vega Malo, desarrollador de Chauchera, Ecuador. Contacto: avmlabs.dev.ec@gmail.com.</p>
+
+<h2>Qué guarda Chauchera y dónde</h2>
+<ul>
+  <li>Tus cuentas, transacciones, presupuestos, facturas y demás datos que ingresas o importas se guardan en tu computadora: en Windows, en la carpeta de datos de Chauchera, con las copias de seguridad en tu carpeta Documentos; en Mac, en la carpeta de Chauchera dentro de tu Biblioteca (Application Support), con sus copias de seguridad.</li>
+  <li>Si conectas tu correo para leer tus facturas, tu contraseña de aplicación se guarda cifrada por Windows, solo para tu usuario en esa computadora, o en el Llavero de tu Mac.</li>
+  <li>Nada de esto se envía a nosotros. En Windows, si desinstalas Chauchera, el archivo de datos se borra; las copias de seguridad quedan en Documentos hasta que tú las borres. En Mac, tus datos quedan en tu Biblioteca hasta que tú los borres.</li>
+</ul>
+
+<h2>Qué se conecta a internet, y para qué</h2>
+<ul>
+  <li><strong>Tipos de cambio</strong> (si tienes cuentas en otras monedas): Chauchera pide a Yahoo Finance o a Frankfurter el valor de las monedas. Solo envía los códigos de moneda (por ejemplo, EUR), nunca tus montos.</li>
+  <li><strong>Precios de inversiones</strong> (solo si lo activas): pide a Yahoo Finance o CoinGecko el precio de los símbolos que tienes, nunca cuántas acciones ni tus montos.</li>
+  <li><strong>Tus facturas desde tu correo</strong> (solo si lo conectas): Chauchera se conecta directamente desde tu computadora a tu proveedor de correo (por ejemplo Gmail) y descarga solo los correos que traen una factura XML y los que tú mismo te envías para anotar un gasto. No pasa por ningún servidor nuestro, y no cambia ni borra nada en tu correo.</li>
+  <li><strong>Anotar gastos desde el iPhone</strong> (solo si creas el atajo): el atajo guarda tu nota en tu propio iCloud Drive, y Chauchera en tu Mac la lee de ahí y borra el archivo. No pasa por ningún servidor nuestro; iCloud lo maneja Apple según su propia política de privacidad.</li>
+  <li><strong>Anotar gastos por WhatsApp</strong> (solo si lo activas): tu computadora se registra en nuestro servidor con una clave propia, y tú vinculas tu número enviando un código. Cuando escribes un gasto al número de Chauchera, WhatsApp (Meta) nos entrega el mensaje; nuestro servidor lo cifra de inmediato con la clave de tu computadora, lo guarda así hasta que tu Chauchera lo recoge, y entonces lo borra (como máximo 30 días si nunca lo recoge). Para poder responderte guardamos tu número de teléfono, vinculado a tu computadora, hasta que desactives la función. No guardamos nada más de tus cuentas, que siguen solo en tu computadora. Los mensajes pasan por WhatsApp según la política de privacidad de Meta. Puedes desactivarlo cuando quieras en Configuración → Anotar desde el teléfono, o escribiendo DESVINCULAR: se borran tu número y los mensajes pendientes.</li>
+  <li><strong>Avisos por Telegram</strong> (solo si los configuras): envía los avisos que elijas a tu propio bot de Telegram.</li>
+  <li><strong>Licencia en Windows</strong>: Microsoft Store comprueba si tu copia está en prueba o comprada. Eso lo maneja Microsoft según su propia política de privacidad.</li>
+  <li><strong>Licencia en Mac</strong>: tu clave se comprueba en tu Mac, sin conexión: Chauchera no la envía a nadie. Pagas por transferencia bancaria o Deuna, coordinado por WhatsApp; guardamos tu nombre, tu correo, el monto y tu clave, para entregártela otra vez si la pierdes y para la factura.</li>
+  <li><strong>Actualizaciones en Mac</strong>: Chauchera consulta una vez al día si hay una versión nueva, en un archivo público en GitHub, y la descarga de ahí. Solo se pide ese archivo; no se envía nada tuyo.</li>
+</ul>
+<p>Chauchera no tiene publicidad, no usa cookies de seguimiento ni herramientas de analítica, y no comparte datos con terceros.</p>
+
+<h2>Este sitio web y la lista de espera</h2>
+<p>El sitio no usa cookies, publicidad ni herramientas de analítica. Si te unes a la lista de espera, guardamos solo tu correo, la fecha y que aceptaste
+que te escribamos, únicamente para avisarte del lanzamiento de Chauchera. No guardamos tu dirección IP ni compartimos tu correo. Puedes pedir que
+lo borremos en cualquier momento escribiendo a avmlabs.dev.ec@gmail.com.</p>
+
+<h2 id="beta">Formulario de opinión de la beta</h2>
+<p>Si participas en la beta privada y llenas el formulario de opinión, guardamos tus respuestas (cómo llevas tu plata, qué te funcionó y qué no, tu
+calificación y lo que pagarías), tu correo solo si lo escribes, y la fecha. Las usamos únicamente para mejorar Chauchera. No guardamos tu dirección IP
+ni las compartimos. Solo citaremos tu opinión, con tu nombre de pila, si marcas la casilla aparte que lo permite. Las conservamos hasta el
+lanzamiento de Chauchera y un año después como máximo. Para que borremos tus respuestas, escribe a avmlabs.dev.ec@gmail.com desde el correo que dejaste en el formulario.</p>
+
+<h2>Tus derechos</h2>
+<p>Según la Ley Orgánica de Protección de Datos Personales del Ecuador tienes derecho a acceder, rectificar, eliminar, oponerte y llevar tus datos. Como tus datos están en tu computadora, puedes ejercerlos directamente: verlos y cambiarlos en Chauchera, exportarlos (Configuración → Datos) y borrarlos desinstalando la aplicación y sus copias. Si tienes una pregunta, escríbenos a avmlabs.dev.ec@gmail.com.</p>
+
+<h2>Niños</h2>
+<p>Chauchera no está dirigido a menores de 13 años.</p>
+
+<h2>Cambios</h2>
+<p>Si cambia lo que Chauchera envía por internet, actualizaremos esta página y la fecha de arriba antes de publicar la nueva versión.</p>
+
+<hr>
+
+<h1 id="english">Chauchera privacy policy</h1>
+<p class="sub">Chauchera for Windows and for Mac · Effective November 14, 2026</p>
+
+<h2>In short</h2>
+<p>Your financial data is kept on your computer, not on our servers. We do not see it, receive it or sell it. The one exception is your choice: if you turn on noting expenses by WhatsApp, those short messages pass through our server, encrypted for your computer, until it collects them (see below).</p>
+
+<h2>Who is responsible</h2>
+<p>Alvaro Vega Malo, developer of Chauchera, Ecuador. Contact: avmlabs.dev.ec@gmail.com.</p>
+
+<h2>What Chauchera keeps, and where</h2>
+<ul>
+  <li>Your accounts, transactions, budgets, invoices and everything else you enter or import are kept on your computer: on Windows in Chauchera's data folder, with backups in your Documents folder; on the Mac in Chauchera's folder in your Library (Application Support), with its backups.</li>
+  <li>If you connect your email to read your invoices, your app password is encrypted by Windows, for your user on that computer only, or kept in your Mac's Keychain.</li>
+  <li>None of this is sent to us. On Windows, uninstalling Chauchera deletes the data file; backups stay in Documents until you delete them. On the Mac your data stays in your Library until you delete it.</li>
+</ul>
+
+<h2>What connects to the internet, and why</h2>
+<ul>
+  <li><strong>Exchange rates</strong> (if you have accounts in other currencies): Chauchera asks Yahoo Finance or Frankfurter for currency values. Only currency codes (e.g. EUR) are sent, never your amounts.</li>
+  <li><strong>Investment prices</strong> (only if you turn them on): asks Yahoo Finance or CoinGecko for the price of the symbols you hold, never how many shares or your amounts.</li>
+  <li><strong>Your invoices from your email</strong> (only if you connect it): Chauchera connects directly from your computer to your email provider (e.g. Gmail) and downloads only emails that carry an XML invoice and those you send yourself to note an expense. It goes through no server of ours and changes or deletes nothing in your mailbox.</li>
+  <li><strong>Noting expenses from your iPhone</strong> (only if you create the shortcut): the shortcut saves your note in your own iCloud Drive, and Chauchera on your Mac reads it from there and deletes the file. It goes through no server of ours; iCloud is handled by Apple under its own privacy policy.</li>
+  <li><strong>Noting expenses by WhatsApp</strong> (only if you turn it on): your computer registers with our server with a key of its own, and you link your number by sending a code. When you text an expense to Chauchera's number, WhatsApp (Meta) delivers the message to us; our server immediately encrypts it with your computer's key, keeps it that way until your Chauchera collects it, and then deletes it (after 30 days at most if it is never collected). To reply to you we keep your phone number, linked to your computer, until you turn the feature off. We keep nothing else about your accounts, which stay only on your computer. Messages travel through WhatsApp under Meta's privacy policy. Turn it off at any time in Settings → Write from your phone, or by texting DESVINCULAR: your number and any pending messages are deleted.</li>
+  <li><strong>Telegram alerts</strong> (only if you set them up): sends the alerts you choose to your own Telegram bot.</li>
+  <li><strong>Licence on Windows</strong>: the Microsoft Store checks whether your copy is a trial or bought, under Microsoft's own privacy policy.</li>
+  <li><strong>Licence on the Mac</strong>: your key is checked on your Mac, offline: Chauchera sends it to no one. You pay by bank transfer or Deuna, arranged by WhatsApp; we keep your name, email, the amount and your key, to give it to you again if you lose it and for the invoice.</li>
+  <li><strong>Updates on the Mac</strong>: once a day Chauchera checks a public file on GitHub for a new version and downloads it from there. Only that file is requested; nothing of yours is sent.</li>
+</ul>
+<p>Chauchera has no ads, no tracking cookies and no analytics, and shares no data with third parties.</p>
+
+<h2>This website and the waiting list</h2>
+<p>The website uses no cookies, ads or analytics. If you join the waiting list, we keep only your email, the date and that you agreed to be
+written to, solely to tell you when Chauchera launches. We do not keep your IP address or share your email. Ask us to delete it at any time:
+avmlabs.dev.ec@gmail.com.</p>
+
+<h2 id="beta-en">Beta feedback form</h2>
+<p>If you take part in the private beta and fill in the feedback form, we keep your answers (how you manage money, what worked and what did not, your
+rating and what you would pay), your email only if you write it, and the date. We use them solely to improve Chauchera. We do not keep your IP
+address or share them. We quote your opinion, with your first name, only if you tick the separate box that allows it. We keep them until Chauchera
+launches and one year after at most. To have your answers deleted, write to avmlabs.dev.ec@gmail.com from the email you left in the form.</p>
+
+<h2>Your rights</h2>
+<p>Under Ecuador's Personal Data Protection Law you may access, correct, delete, object to and take your data. Because your data is on your computer, you can do so directly: view and change it in Chauchera, export it (Settings → Data), and delete it by uninstalling the app and its backups. Questions: avmlabs.dev.ec@gmail.com.</p>
+
+<h2>Children</h2>
+<p>Chauchera is not directed at children under 13.</p>
+
+<h2>Changes</h2>
+<p>If what Chauchera sends over the internet changes, we will update this page and the date above before releasing the new version.</p>
+</main>
+</body>
+</html>
